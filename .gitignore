@@ -1,0 +1,16 @@
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.opensdf
+*.sdf
+*.tmp
+*.log
+*.pdb
+*.obj
+*.dll
+*.exe
