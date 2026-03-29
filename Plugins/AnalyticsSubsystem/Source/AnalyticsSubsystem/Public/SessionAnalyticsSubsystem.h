@@ -14,6 +14,9 @@ public:
     virtual void Initialize(FSubsystemCollectionBase& Collection) override;
     virtual void Deinitialize() override;
 
+    UFUNCTION(BlueprintCallable, Category = "Analytics")
+    void LogEvent(const FString& EventName);
+
 private:
 
     FString SessionID;

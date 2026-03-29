@@ -23,6 +23,11 @@ void USessionAnalyticsSubsystem::Deinitialize()
     Super::Deinitialize();
 }
 
+void USessionAnalyticsSubsystem::LogEvent(const FString& EventName)
+{
+    UE_LOG(LogTemp, Warning, TEXT("[Analytics] Event: %s"), *EventName);
+}
+
 FString USessionAnalyticsSubsystem::GenerateSessionID() const
 {
     FDateTime Now = FDateTime::Now();
